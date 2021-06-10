@@ -1,6 +1,6 @@
-module SpringAnimation = HooksSpringAnimation
+module SpringAnimation = HooksSpringAnimation;
 // module Spring = HooksSpring
-module Animation = HooksAnimation
+module Animation = HooksAnimation;
 let pxI = i => string_of_int(i) ++ "px";
 
 let pxF = v => pxI(int_of_float(v));

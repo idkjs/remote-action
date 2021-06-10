@@ -28,7 +28,8 @@ let setOnChange =
     ) => {
   let callback =
     (.) => {
-      a.state = HooksSpring.stepper(~preset?, ~speedup?, ~precision?, a.state);
+      a.state =
+        HooksSpring.stepper(~preset?, ~speedup?, ~precision?, a.state);
       let isFinished = HooksSpring.isFinished(a.state);
       onChange(a.state.value);
       isFinished ? HooksAnimation.Stop(onStop) : Continue;

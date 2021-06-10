@@ -354,8 +354,8 @@ function make(Props) {
                       RE_EXN_ID: "Assert_failure",
                       _1: [
                         "ReducerAnimationExample.re",
-                        300,
-                        21
+                        295,
+                        19
                       ],
                       Error: new Error()
                     };

@@ -1,5 +1,3 @@
-
-
 /* Desugars to
 
    `React.createElement(HooksPage.make, HooksPage.makeProps(~message="hello", ()))` */

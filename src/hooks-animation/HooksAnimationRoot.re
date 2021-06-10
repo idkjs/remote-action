@@ -1,4 +1,4 @@
 ReactDOMRe.renderToElementWithId(
-  <HooksReanimate.ComponentGallery/>,
+  <HooksReanimate.ComponentGallery />,
   "index",
 );

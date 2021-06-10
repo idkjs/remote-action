@@ -156,7 +156,7 @@ module Top = {
                onDestroy={_event => dispatch(Destroy(todo))}
                onEdit={_event => dispatch(Edit(todo))}
                editing
-               onSave={(text:string) => dispatch(Save(todo, text))}
+               onSave={(text: string) => dispatch(Save(todo, text))}
                onCancel={_event => dispatch(Cancel)}
              />;
            },

@@ -1,4 +1,1 @@
-ReactDOMRe.renderToElementWithId(
-  <Reanimate.ComponentGallery />,
-  "index"
-);
+ReactDOMRe.renderToElementWithId(<Reanimate.ComponentGallery />, "index");

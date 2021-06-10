@@ -115,8 +115,8 @@ module ImageGalleryAnimation = {
 
     //   dispatch(Click);
     // };
-    React.useEffect0(
-      () => {
+    React.useEffect0(()
+      => {
         state.animation
         |> HooksSpringAnimation.setOnChange(~precision=0.05, ~onChange=cursor =>
              dispatch(SetCursor(cursor))
@@ -126,9 +126,8 @@ module ImageGalleryAnimation = {
           dispatch(Click);
         };
         Some(() => HooksSpringAnimation.stop(state.animation));
-      },
+      });
       // [|state|],
-    );
 
     let image = int_of_float(state.cursor);
     let phase = state.cursor -. float_of_int(image);

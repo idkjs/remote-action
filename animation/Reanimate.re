@@ -1,14 +1,13 @@
 let pxI = i => string_of_int(i) ++ "px";
 
 let pxF = v => pxI(int_of_float(v));
-module Key ={
-
-    let counter = ref(0);
+module Key = {
+  let counter = ref(0);
   let gen = () => {
     incr(counter);
     string_of_int(counter^);
   };
-}
+};
 // module ImageTransition: {
 //   /***
 //    * Render function for a transition between two images.

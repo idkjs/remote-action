@@ -1,9 +1,12 @@
 type animationFrameID;
 
 [@bs.val]
-external requestAnimationFrame: (unit => unit) => animationFrameID = "requestAnimationFrame";
+external requestAnimationFrame: (unit => unit) => animationFrameID =
+  "requestAnimationFrame";
 
-[@bs.val] external cancelAnimationFrame: animationFrameID => unit = "cancelAnimationFrame";
+[@bs.val]
+external cancelAnimationFrame: animationFrameID => unit =
+  "cancelAnimationFrame";
 
 type onStop = option(unit => unit);
 

@@ -44,9 +44,9 @@ let stepper =
   let newVelocity = velocity +. acceleration *. secondsPerFrame;
   let newValue = value +. newVelocity *. secondsPerFrame;
   abs_float(newVelocity) < precision
-  && abs_float(newValue -. finalValue) < precision ?
-    {...state, value: finalValue, velocity: 0.0} :
-    {...state, value: newValue, velocity: newVelocity};
+  && abs_float(newValue -. finalValue) < precision
+    ? {...state, value: finalValue, velocity: 0.0}
+    : {...state, value: newValue, velocity: newVelocity};
 };
 
 let isFinished = ({value, velocity, finalValue}) =>

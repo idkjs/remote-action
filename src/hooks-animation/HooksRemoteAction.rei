@@ -8,10 +8,8 @@ type t('action);
 
 type token('action);
 
-
 /*** Create a new remote action, to which one component will subscribe. */
 let create: unit => t('action);
-
 
 /***
  * Subscribe to the remote action, via the component's `send` function.
@@ -22,10 +20,8 @@ let create: unit => t('action);
 let subscribe:
   (~send: 'action => unit, t('action)) => option(token('action));
 
-
 /*** Unsubscribe from a subscription  */
 let unsubscribe: token('action) => unit;
-
 
 /*** Perform an action on the subscribed component. */
 let send: (t('action), ~action: 'action) => unit;

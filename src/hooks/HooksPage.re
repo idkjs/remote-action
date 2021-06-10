@@ -12,5 +12,5 @@ let make = (~message, ()) => {
     Js.log("Hey!");
     None;
   });
-  <button onClick=handleClick> {React.string(message)} </button>
+  <button onClick=handleClick> {React.string(message)} </button>;
 };
