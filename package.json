@@ -9,7 +9,7 @@
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
     "test": "exit 0",
-        "format": "find . -iname '*.re' | grep -v node_modules | xargs bsrefmt --in-place && find . -iname '*.rei' | xargs bsrefmt -i true --in-place",
+    "format": "find . -iname '*.re' | grep -v node_modules | xargs bsrefmt --in-place && find . -iname '*.rei' | xargs bsrefmt -i true --in-place",
     "webpack": "webpack -w",
     "serve": "open src/index.html",
     "webpack:production": "NODE_ENV=production webpack"
